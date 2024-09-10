@@ -11,4 +11,6 @@ module "ec2" {
   source = "./web"
   sn = module.vpc.pb_sn
   sg = module.vpc.sg
+  ami = "ami-0182f373e66f89c85"
+  type = "t2.micro"
 }

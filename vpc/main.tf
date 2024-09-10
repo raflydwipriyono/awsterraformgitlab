@@ -8,7 +8,6 @@ resource "aws_vpc" "my_vpc" {
   }
 }
 
-
 resource "aws_subnet" "pb_sn" {
   vpc_id                  = aws_vpc.my_vpc.id
   cidr_block              = var.pb_cidr
